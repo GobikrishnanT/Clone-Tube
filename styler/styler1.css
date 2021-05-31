@@ -1,0 +1,540 @@
+/*<><><><><><><><><><><><><><><><><><> ADDING FIRST AID KID <><><><><><><><><><><><><><><<><><><><>>*/
+/* Add the neccessary Things befor Start */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+title i {
+    color: rgb(23, 180, 70);
+}
+
+/* Lets make grid for the App */
+.mainContainer{
+    display: grid; /*displaying Grid in mainContainer */
+    height: 100vh;
+    grid-template-columns: repeat(12 , 1fr);/*Seperating column 12 with 1 factor*/
+    gap: 5px; /*Giving some space for the column*/
+   
+}
+
+/* Adding Border for Grid for reading purpose */
+.headingSections {
+    border: 1px solid black;
+}
+
+/*<><><><><><><><><><><><><><><><><><> NOW MACHINE ABLE TO RUN <><><><><><><><><><><><><><><<><><><><>>*/
+
+
+
+/*<><><><><><><><><><><><><><><><><><> HEADING SECTION START <><><><><><><><><><><><><><><><><><><>*/
+/* Inside the heading section  display everything flex*/
+.headingSections{
+    padding: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  /* Sprly Came ouput */
+    /* background-color: #181818; */
+}
+
+
+/* //Facing issue in logoSlot want to increase the width : */
+.logoSlot{
+
+    /* And here want to make both the item to same line so */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    padding-left: 2px;
+}
+.logoSlot h4 {
+    font-family: 'Oswald', sans-serif;
+}
+.logoSlot i {
+    margin: 0px 7px;
+    color: rgb(23, 180, 70);
+    
+}
+
+/* Now Search box is somewhat ugly so increase the width*/
+.searchVideosSlot{
+    flex-basis: 40%;
+
+}
+.mainForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left:5px ;
+}
+
+
+
+.mainForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#serchVideo_id{
+    width: 100%;
+    padding: 4px;
+    background-color: black;
+    caret-color: green;
+    padding-left: 4px;
+    border: 1px solid silver;
+    font-size: 17px;
+    color: rgb(23, 180, 70);
+    font-weight: 600;
+}
+.btnSection{
+    flex-basis: 10%;
+    padding: 4px;
+}
+.btnSection button {
+    width: 100%;
+    padding: 4px;
+    margin-left: 0px;
+    background-color: black;
+    color: rgb(23, 180, 70);
+    border: 1px solid silver;
+}
+.btnSection button i {
+    width: 100%;
+}
+
+
+/* For video Upload section */
+.videoUploadSlot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    
+}
+.videoUploadSlot h4 {
+    text-align: right;
+}
+
+.videoUploadSlot i {
+    color: rgb(23, 180, 70);
+    margin: 10px;
+}
+
+/* For Button Section */
+/*Here The button either logot is visible or login visible know depend on user stats
+So we are blocking the display of both button*/
+
+.profileStatus button {
+    background-color: rgb(23, 180, 70);
+    border: 1px solid black;
+    padding: 2px;
+    border-radius: 2px;
+    
+}
+.profileStatus{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.profileStatus :first-child {
+    text-align: right;
+}
+
+
+
+/* Avatar Section */
+.avatarPhoto{
+    width: 5%;
+    text-align: center;
+    color: rgb(23, 180, 70);
+}
+/*<><><><><><><><><><><><><><><><><><> HEADING SECTION END <><><><><><><><><><><><><><><><><><><>*/
+
+
+/*<><><><><><><><><><><><><><><><><><> SECOND ROW SECTION START <><><><><><><><><><><><><><><><><><><>*/
+
+
+/*<><><><><><><><><><><><><><><><><><> nAV bAR COMPLETE DESIGN <><><><><><><><><><><><><><><><><><><>*/
+
+.navBarSideSlot nav {
+    background-color: #181818;
+    color: white;
+    width: 100%;
+    height: 100%;
+    /* //first flex col every ul */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+section{
+    width: 100%;
+    height: 100%;
+}
+.navBarSideSlot nav section ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-bottom: 1px solid silver;
+}
+.navBarSideSlot ul li {
+    font-size: 25px;
+    font-family: 'PT Sans', sans-serif;
+}
+.navBarSideSlot ul li i {
+    color: rgb(23, 180, 70);
+}
+nav section h3 {
+    margin-bottom: 7px;
+}
+/*<><><><><><><><><><><><><><><><><><> nAV bAR COMPLETE DESIGN <><><><><><><><><><><><><><><><><><><>*/
+
+
+/*<><><><><><><><><><><><><><><><><><> SECOND ROW SECTION END <><><><><><><><><><><><><><><><><><><>*/
+.videoSection{
+    height: 100vh;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(12 , 1fr);
+    grid-template-rows: 0.2fr 0.3fr 0.3fr auto;
+    background-color: #0F0F0F;
+    color: white;
+    overflow: scroll;
+}
+
+
+
+/* <><><><><><><><>><><><><><><><><><><><><><><><><><><><><><><><><><><><>><><><><><><><>><><><><><><>><> */
+.bannerDiv {
+    height: 200px;
+}
+.bannerDiv img{
+    width: 100%;
+    height: 194px;
+}
+/* Banner is over : */
+/* Row : 2 */
+.descriptionBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+/* We want to five some spaces between the text */
+.descriptionDiv {
+
+    padding: 3px;
+}
+.descriptionDiv h4 {
+    margin: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* In stats we have give some space and margin for eash stat */
+.subDiv {
+    padding: 4px;
+}
+.subDiv h4 {
+    margin: 10px;
+    border-bottom: 1px solid silver;
+}
+/* <><><><><><><><>><><><><><><><><><><><><><><><><><><><><><><><><><><><>><><><><><><><>><><><><><><>><> */
+
+
+/* <><><><><><><><>><><><><><><><><><><><><><><><><><><><><><><><><><><><>><><><><><><><>><><><><><><>><> */
+
+/* ownwerInfo */
+.nameBox {
+    
+    padding-left: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nameBox img{
+
+
+    height: 12vh;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+/* <><><><><><><><>><><><><><><><><><><><><><><><><><><><><><><><><><><><>><><><><><><><>><><><><><><>><> */
+
+/* <><><><><><><><>><><><><><><><><><><><><><><><><><><><><><><><><><><><>><><><><><><><>><><><><><><>><> */
+/* Here the hero design for buttom nava bar */
+.downBar{
+    position: relative;
+    width: 100%;
+    height: 7vh;
+    background-color: black;
+    box-shadow: 0px -15px 20px -10px silver;
+    display: none;
+    padding-top: 5px;
+    transition: box-shadow 4s ease-in-out 4s;
+    margin-bottom: 2px;
+
+}
+/* //inside design */
+.downBar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.downBar i {
+    color: rgb(23, 180, 70);
+}
+
+.upload{
+    margin-bottom: 4px;
+
+}
+
+
+/* <><><><><><><><>><><><><><><><><><><><><><><><><><><><><><><><><><><><>><><><><><><><>><><><><><><>><> */
+
+
+.playLitsBar {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* //here the videos playList of the specific channel : */
+.playListBox{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
+    grid-template-rows: auto auto auto auto auto;
+    gap: 24px;
+}
+
+.playLitsBar h4 {
+    margin: 5px;
+    text-align: left;
+    color: white;
+    width: 100%;
+    font-family: 'Odibee Sans', cursive;
+    letter-spacing: 2px;
+}
+.playLitsBar :last-child {
+    font-size: 15px;
+}
+.playLitsBar iframe{
+    width: 100%;
+    height: 25vh;
+}
+
+/* <><><><><><><><>><><><><><><><><><><><><><><><><><><><><><><><><><><><>><><><><><><><>><><><><><><>><> */
+
+
+
+
+/* First For Mobile : */
+@media (min-width : 200px) {
+    .navBarSideSlot {
+        display: none;
+    }
+    .headingSections {
+        grid-column: 1 / span 12;
+    }
+    .nameBox {
+        grid-column: 1 / span 12;
+    }
+    .nameBox img{
+        width: 23%;
+    }
+
+    .videoSection {
+        grid-column:  1 / span 12;
+    }
+    .bannerDiv {
+        grid-column: 1 / span 12;
+    }
+    .descriptionDiv{
+        flex-basis: 100%;
+    }
+    .subDiv {
+        flex-basis: 100%;
+    }
+    .descriptionBox {
+        grid-column: 1 / span 12;
+    }
+
+    /* //Mandatory things : for heading section giving flex-basis */
+    .logoSlot {
+        flex-basis: 10%;
+    }
+    .searchVideosSlot {
+        flex-basis: 40%;
+    }
+    
+    .profileStatus {
+        flex-basis: 30%;
+    }
+    .avatarPhoto {
+        flex-basis: 10%;
+    }
+
+
+
+
+    /* //Complete setup : */
+    /* 1 . we dont want the name */
+    .logoSlot h4{
+        display: none;
+    }
+
+    /* 3 . no upload there */
+    .videoUploadSlot {
+        display: none;
+    }
+
+
+    /* // trying to show the down nava bar  */
+    .downBar{
+        display: block;
+        position: fixed;
+        bottom: 0;
+    }
+
+
+    
+
+
+}
+@media (min-width : 760px) {
+    /* <><><><><><><><><><>><><><> Section of the banner for channel Info ><><><><><> */
+    .nameBox {
+        grid-column: 1 / span 12;
+    }
+    .nameBox img{
+        width: 12%;
+    }
+
+    .navBarSideSlot {
+        display: none;
+    }
+    .nameBox{
+        grid-column: 1 / span 12;
+    }
+    .navBarSideSlot {
+        grid-column: 1 / span 2;
+    }
+    .videoSection{
+        grid-column: 1 / span 12;
+    }
+    .bannerDiv{
+        grid-column: 1 / span 12;
+    }
+    .descriptionBox{
+        grid-column: 1 / span 12;
+
+    }
+    .descriptionDiv{
+        flex-basis: 70%;
+    }
+    .subDiv{
+        flex-basis: 25%;
+    }
+    /* <><><><><><><><><><>><><><> Section of the banner for channel Info ><><><><><> */
+
+
+    /* //Make the heading section to appear :display: ; */
+    .logoSlot {
+        flex-basis: 20%;
+    }
+    .logoSlot h4 {
+        display: block;
+    }
+    /* <><>><><><>< */
+    .searchVideosSlot {
+        flex-basis: 30%;
+    }
+    /* ><><><><><><><><>< */
+    .videoUploadSlot {
+        display: flex;
+    }
+    .videoUploadSlot {
+        flex-basis: 20%;
+    }
+    /* <><><><><><><><><><><><>< */
+    .profileStatus {
+        flex-basis: 20%;
+    }
+    .avatarPhoto {
+        flex-basis: 10%;
+    }
+
+    /* //here we disply : none the down nav bar */
+    .downBar {
+        display: none;
+    }
+    .playListBox {
+        grid-column: 1 / span 12;
+    }
+}
+
+@media (min-width : 1000px) {
+    .nameBox img {
+        width: 12%;
+    }
+    /* //Make the heading section to appear :display: ; */
+    .logoSlot {
+        flex-basis: 20%;
+    }
+    .logoSlot h4 {
+        display: block;
+    }
+    /* <><>><><><>< */
+    .searchVideosSlot {
+        flex-basis: 30%;
+    }
+    /* ><><><><><><><><>< */
+    .videoUploadSlot {
+        display: flex;
+    }
+    .videoUploadSlot h4{
+        flex-basis: 80%;
+    }
+    .videoUploadSlot i {
+        flex-basis: 20%;
+    }
+    /* <><><><><><><><><><><><>< */
+    .profileStatus {
+        flex-basis: 20%;
+    }
+    .avatarPhoto {
+        flex-basis: 10%;
+    }
+    .navBarSideSlot {
+        display: block;
+    }
+    .videoSection{
+        grid-column: 3 / span 10;
+    }
+
+    .downBar {
+        display: none;
+    }
+    .playListBox {
+        grid-column: 1 / span 12;
+    }
+}
